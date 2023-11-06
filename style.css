@@ -1,0 +1,297 @@
+@font-face {
+    font-family: "fontetext";
+    src: url("fonte/Noto_Serif_Vithkuqi/static/NotoSerifVithkuqi-Medium.ttf");
+}
+
+
+:root {
+    --vermelho-banner: firebrick;
+    --amarelo-titulo: rgb(228, 228, 6);
+    --background-black: black;
+    --text-black: black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------
+                     Banner
+-------------------------------------------*/
+.banner {
+    border: 1px solid black;
+    background-color: var(--vermelho-banner);
+}
+
+
+.banner h1 {
+    color: var(--amarelo-titulo);
+    text-align: center;
+    margin: 2cm 3cm;
+    font-size: 39pt;
+    font-family: "fontetext";
+}
+
+
+
+/*--------------------Main pagina 1-----------------------------*/
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-black);
+
+}
+
+.Principal {
+    border: 1px solid black;
+    min-height: 150px;
+    width: 80%;
+    margin: 0.4cm 50% 0.4cm 10%;
+    border-radius: 10px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+#duascolum {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.tituloLink {
+    text-align: center;
+    font-size: 29px;
+
+}
+
+/*---------------------------resto-----------------------------*/
+.tituloParagrafo {
+    text-align: center;
+    font-family: "fontetext";
+    color: var(--text-black);
+    margin: 1cm 10cm;
+    font-size: 40pt;
+    text-shadow: rgb(83, 82, 82) 0.1em 0.01em;
+
+}
+
+.hisimg {
+    text-align: center;
+    margin: 1cm 10cm;
+}
+
+.imghis {
+    width: 450px;
+}
+
+.referenciaimg {
+    font-size: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.list {
+    text-align: justify;
+    margin: 1cm 2.5cm;
+}
+
+.Principal1 {
+    border: 1px solid black;
+    min-height: 150px;
+    width: 80%;
+    margin: 0.4cm 50% 0.4cm 10%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.Principal a {
+    text-decoration: none;
+    color: #121212;
+}
+
+.conteudo {
+    text-align: center;
+    font-family: "fontetext";
+    color: var(--text-black);
+    margin: 0.5cm 1cm;
+    font-size: 12pt;
+
+}
+
+.Principal2 {
+    border: 1px solid black;
+    min-height: 150px;
+    width: 80%;
+    margin: 0.4cm 50% 0.4cm 10%;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: justify;
+}
+
+.bibliografia {
+    color: rgb(0, 0, 0);
+    line-height: 1.15;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 0cm 2cm;
+    max-width: 80%;
+}
+
+.bibliografia1 {
+    color: rgb(0, 0, 0);
+    line-height: 1.15;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10px 1cm 0cm;
+}
+
+footer {
+    background-color: black;
+    display: grid;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -10px;
+    padding: 0 0 10 0;
+}
+
+/*-------------------------------resposividade--------------------------------*/
+
+@media (max-width: 647px) {
+    .dropdown {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    nav li{
+        margin-right: 80px;
+    }
+
+    .bibliografia {
+        font-size: 8px;
+        margin: 0cm 20px;
+        max-width: 80%;
+    }
+
+    .tituloParagrafo{
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .referenciaimg{
+        font-size: 10px;
+    }
+
+    .conteudo{
+        font-size: 10px;
+    }
+
+    figcaption {
+        font-size: 7px;
+    }
+
+    .list li{
+        font-size: 9px;
+        margin-left: -20px;
+    }
+
+    .imghis{
+        margin-left: 20%;
+    }
+
+    #menu{
+        margin-left: 0px;
+        font-size: 12px
+    }
+
+    .tituloParagrafo{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .banner {
+        width: 100%;
+    }
+
+    .banner h1 {
+        margin: 1.8cm 0;
+        font-size: 29pt;
+    }
+
+    .div1 {
+        height: 200px;
+        width: 100px;
+    }
+
+    #duascolum {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Principal {
+        min-height: 100px;
+        width: 80%;
+        margin: 0.4cm 50% 0.4cm 10%;
+    }
+
+    .tituloLink {
+        font-size: 28px;
+    }
+
+    .tituloParagrafo {
+        font-size: 30px;
+        text-align: center;
+        font-family: "fontetext";
+        color: var(--text-black);
+        margin: 60px 10px;
+        text-shadow: rgb(83, 82, 82) 0.1em 0.01em;
+    }
+
+    .hisimg {
+        text-align: center;
+        margin: 5px 10px;
+    }
+
+    .referenciaimg {
+        font-size: 11px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+
+
+    .imghis {
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .hisimg1 {
+        text-align: center;
+        margin: 2px 3px;
+        width: 115px;
+    }
+
+    .hisimg2 {
+
+        grid-column: 3;
+        text-align: center;
+        margin: 2px 3px;
+        width: 115px;
+
+    }
+
+
+}
