@@ -18,26 +18,6 @@
     box-sizing: border-box;
 }
 
-/*-------------------------------------------
-                     Banner
--------------------------------------------*/
-.banner {
-    border: 1px solid black;
-    background-color: var(--vermelho-banner);
-}
-
-
-.banner h1 {
-    color: var(--amarelo-titulo);
-    text-align: center;
-    margin: 2cm 3cm;
-    font-size: 39pt;
-    font-family: "fontetext";
-}
-
-
-
-/*--------------------Main pagina 1-----------------------------*/
 .conteiner {
     display: flex;
     flex-direction: column;
@@ -49,12 +29,12 @@
 .Principal {
     border: 1px solid black;
     min-height: 150px;
-    width: 80%;
+    width: 30vw;;
     margin: 0.4cm 50% 0.4cm 10%;
     border-radius: 10px;
     background-color: #fff;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
@@ -71,7 +51,7 @@
 
 .tituloLink {
     text-align: center;
-    font-size: 29px;
+    font-size: 2vw;
 
 }
 
@@ -81,7 +61,7 @@
     font-family: "fontetext";
     color: var(--text-black);
     margin: 1cm 10cm;
-    font-size: 40pt;
+    font-size: 3vw;
     text-shadow: rgb(83, 82, 82) 0.1em 0.01em;
 
 }
@@ -92,7 +72,7 @@
 }
 
 .imghis {
-    width: 450px;
+    width: 30vw;
 }
 
 .referenciaimg {
@@ -161,59 +141,48 @@ footer {
     background-color: black;
     display: grid;
     color: white;
-    font-size: 12px;
+    font-size: 1vw;
     text-align: center;
     margin-top: -10px;
     padding: 0 0 10 0;
 }
 
 /*-------------------------------resposividade--------------------------------*/
-
-@media (max-width: 960px) {
-    body header h1{
-        text-align: center;
-        width: 100%!important;
-    }
-
-    body header div.row{
+@media (max-width: 920px) {
+    main .Principal {
         display: block;
-
+        min-height: 90px;
+        margin: 0.4cm 50% 0.4cm 10%;
+        border-radius: 10px;
+        background-color: #fff;
+        align-items: center;
     }
-    body header div.row nav.navbar{
-        width: 100%!important;
-    }
-    body header div.row ul.navbar-nav{
-        flex-wrap: wrap;
-        justify-content: center;
 
+    main .Principal a:nth-child(1) {
+        display: none;
+    }
+
+    .tituloLink {
+        margin-top: 0.5cm;
+        font-size: 3vw;
     }
 }
+
 @media (max-width: 647px) {
-    .dropdown {
-        margin-left: 20px;
-        font-size: 12px;
-    }
-
-    nav li{
-        margin-right: 80px;
-    }
-
+    
     .bibliografia {
         font-size: 8px;
         margin: 0cm 20px;
         max-width: 80%;
     }
 
-    .tituloParagrafo{
-        font-size: 30px;
-        margin: 10px;
-    }
+    
 
-    .referenciaimg{
+    .referenciaimg {
         font-size: 10px;
     }
 
-    .conteudo{
+    .conteudo {
         font-size: 10px;
     }
 
@@ -221,23 +190,12 @@ footer {
         font-size: 7px;
     }
 
-    .list li{
+    .list li {
         font-size: 9px;
         margin-left: -20px;
     }
 
-    .imghis{
-        margin-left: 20%;
-    }
 
-    #menu{
-        margin-left: 0px;
-        font-size: 12px
-    }
-
-    .tituloParagrafo{
-        margin-top: 20px;
-    }
 }
 
 @media (max-width: 380px) {
