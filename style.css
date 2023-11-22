@@ -169,6 +169,25 @@ footer {
 
 /*-------------------------------resposividade--------------------------------*/
 
+@media (max-width: 960px) {
+    body header h1{
+        text-align: center;
+        width: 100%!important;
+    }
+
+    body header div.row{
+        display: block;
+
+    }
+    body header div.row nav.navbar{
+        width: 100%!important;
+    }
+    body header div.row ul.navbar-nav{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
 @media (max-width: 647px) {
     .dropdown {
         margin-left: 20px;
